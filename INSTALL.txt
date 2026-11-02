@@ -1,0 +1,2 @@
+See README-INSTALL.txt. Extract this ZIP into the AI-Mystery-Room-Starter project root,
+run INSTALL-CASEFILE-UPGRADE.cmd, then run START-CASEFILE.cmd.

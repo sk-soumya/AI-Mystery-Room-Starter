@@ -1,0 +1,20 @@
+AI MYSTERY ROOM — WINDOWS CMD QUICK START
+
+1) Download AI-Mystery-Room-Starter.zip into your Downloads folder.
+2) Open Command Prompt (Win + R, type cmd, press Enter).
+3) Paste these commands, one block at a time:
+
+cd /d "%USERPROFILE%\Downloads"
+powershell -NoProfile -ExecutionPolicy Bypass -Command "Expand-Archive -LiteralPath '.\AI-Mystery-Room-Starter.zip' -DestinationPath '.' -Force"
+cd /d "%USERPROFILE%\Downloads\AI-Mystery-Room-Starter"
+SETUP.bat
+
+4) SETUP opens server\.env in Notepad. Paste your GEMINI_API_KEY after the equals sign, save, then close Notepad. MONGODB_URI can stay blank for temporary demo storage.
+5) Back in CMD, press a key when setup says so. Then run:
+
+START.bat
+
+6) Open http://localhost:5173 if it does not open automatically. Keep both terminal windows open.
+
+Node.js 20+ is required. If npm commands fail, install Node.js 22 LTS from https://nodejs.org/ and reopen CMD.
+With no Gemini key, the site runs a labelled demo mystery. Gemini creates original mysteries and image evidence when configured. ElevenLabs creates audio files when ELEVENLABS_API_KEY and ELEVENLABS_VOICE_ID are configured.
