@@ -2,7 +2,7 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
-  base: '/AI-Mystery-Room-Starter/',
+  base: process.env.GITHUB_ACTIONS === "true" ? "/AI-Mystery-Room-Starter/" : "/",
   plugins: [react()],
   server: {
     host: '0.0.0.0',
