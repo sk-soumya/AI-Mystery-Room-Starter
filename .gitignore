@@ -18,3 +18,20 @@ _casefile_upgrade/
 /AI-Mystery-Room-Starter/
 /_backup_before_visual_repair_20261102_125127/
 /_casefile_upgrade/
+
+# Secrets and local dependencies
+.env
+**/.env
+node_modules/
+**/node_modules/
+client/dist/
+server/uploads/*
+!server/uploads/.gitkeep
+
+# Temporary files and backups
+*.bak
+*.backup
+*.phase*-backup
+AI-Mystery-Room-Starter/
+_backup_before_visual_repair_20261102_125127/
+_casefile_upgrade/
